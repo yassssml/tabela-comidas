@@ -9,7 +9,7 @@ datasource db {
 }
 
 
-model Comida {
+model comida {
   id            Int @id @default(autoincrement())
   nome          String
   tipo          String
@@ -18,5 +18,5 @@ model Comida {
   createdAt     DateTime @default(now())
   updateAt      DateTime @updatedAt
 
-  @@map("Comidas")
+  @@map("comidas")
 }
